@@ -21,6 +21,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: hidden;
   background: #ffffff;
   color: var(--text-main);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -245,6 +246,11 @@ a {
   white-space: nowrap;
 }
 
+.contact-email {
+  color: #2f66c5;
+  font-weight: 700;
+}
+
 .dates-block {
   margin-top: 18px;
 }
@@ -263,7 +269,67 @@ a {
   margin-top: 90px;
 }
 
+@media (min-width: 1600px) {
+  :root {
+    --content-width: 1440px;
+  }
+
+  .hero {
+    min-height: 460px;
+  }
+
+  .hero-copy {
+    width: min(100%, 1220px);
+  }
+
+  .hero-stage {
+    padding-top: 34px;
+  }
+
+  .hero-kicker {
+    margin-bottom: 22px;
+  }
+
+  .hero-rule {
+    width: min(100%, 940px);
+  }
+
+  .organizer-card {
+    grid-template-columns: 194px 1fr;
+    padding-right: 40px;
+  }
+
+  .organizer-portrait,
+  .organizer-card img {
+    width: 194px;
+    height: 194px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .hero-copy {
+    width: min(100%, 1040px);
+  }
+
+  .hero-rule {
+    width: min(100%, 820px);
+  }
+}
+
 @media (max-width: 1180px) {
+  .hero {
+    min-height: 380px;
+    background-position: 44% center;
+  }
+
+  .hero-copy {
+    width: min(100%, 920px);
+  }
+
+  .hero-stage {
+    padding-top: 24px;
+  }
+
   .content-shell {
     padding-top: 36px;
   }
@@ -304,6 +370,11 @@ a {
 }
 
 @media (max-width: 900px) {
+  .hero {
+    min-height: 352px;
+    background-position: 38% center;
+  }
+
   .hero-shell {
     padding: 20px 20px 28px;
   }
@@ -321,7 +392,7 @@ a {
   }
 
   .hero-kicker {
-    margin-top: 26px;
+    margin-top: 20px;
     font-size: clamp(2.5rem, 7vw, 3.4rem);
   }
 
@@ -369,9 +440,45 @@ a {
   }
 }
 
+@media (max-width: 760px) {
+  .hero {
+    min-height: 318px;
+    background-position: 35% center;
+  }
+
+  .hero-shell {
+    padding-inline: 18px;
+  }
+
+  .hero-stage {
+    padding-top: 8px;
+  }
+
+  .hero-copy {
+    width: min(100%, 94vw);
+  }
+
+  .hero-kicker {
+    font-size: clamp(2.25rem, 8vw, 3rem);
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(1.85rem, 6.6vw, 2.55rem);
+  }
+
+  .hero-rule {
+    width: min(100%, 94vw);
+  }
+
+  .content-shell {
+    padding-inline: 18px;
+  }
+}
+
 @media (max-width: 640px) {
   .hero {
     min-height: 286px;
+    background-position: 32% center;
   }
 
   .hero-shell {
@@ -479,5 +586,32 @@ a {
 
   .organizer-copy {
     transform: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    min-height: 268px;
+  }
+
+  .hero-kicker {
+    font-size: 2.1rem;
+  }
+
+  .hero-copy h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-meta {
+    font-size: 14px;
+  }
+
+  .content-shell {
+    padding-inline: 14px;
+  }
+
+  .organizer-card {
+    padding: 14px;
+    border-radius: 18px;
   }
 }
