@@ -1,6 +1,6 @@
 :root {
   --content-width: 1320px;
-  --content-gutter: clamp(18px, 3vw, 34px);
+  --content-gutter: clamp(28px, 3.8vw, 44px);
   --hero-blue-1: #37559d;
   --hero-blue-2: #5d83bf;
   --hero-blue-3: #203b92;
@@ -447,7 +447,7 @@ a {
   }
 
   .hero-shell {
-    padding-inline: 18px;
+    padding-inline: 22px;
   }
 
   .hero-stage {
@@ -471,7 +471,7 @@ a {
   }
 
   .content-shell {
-    padding-inline: 18px;
+    padding-inline: 22px;
   }
 }
 
@@ -607,7 +607,7 @@ a {
   }
 
   .content-shell {
-    padding-inline: 14px;
+    padding-inline: 18px;
   }
 
   .organizer-card {
