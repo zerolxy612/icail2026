@@ -322,6 +322,37 @@ a {
   margin-top: 26px;
 }
 
+.rundown-block {
+  margin-top: 32px;
+}
+
+.rundown-list {
+  display: grid;
+  gap: 14px;
+}
+
+.rundown-item {
+  padding: 14px 16px;
+  border: 1px solid #d9e5f5;
+  border-radius: 10px;
+  background: #fbfdff;
+}
+
+.rundown-item h3 {
+  margin: 0 0 6px;
+  color: #224a83;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.rundown-item p {
+  margin: 0;
+  color: #5f7491;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
 .emphasis {
   margin-top: 12px;
   color: #55606d;
