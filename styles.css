@@ -222,10 +222,13 @@ a {
 }
 
 .organizer-bio {
-  margin: 14px 0 0;
+  margin: 16px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid rgba(137, 154, 181, 0.22);
   color: #3a3a3a;
-  font-size: 13.5px;
-  line-height: 1.65;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.7;
   text-align: justify;
   hyphens: auto;
 }
@@ -257,7 +260,12 @@ a {
   margin: 0;
   color: #5a6778;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
+}
+
+.organizer-copy .organizer-bio {
+  font-weight: 400;
 }
 
 .organizer-line-nowrap {
