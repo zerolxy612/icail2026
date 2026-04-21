@@ -181,32 +181,53 @@ a {
 
 .organizer-card {
   display: grid;
-  grid-template-columns: 182px 1fr;
-  align-items: center;
-  gap: 12px;
-  min-height: 184px;
-  padding: 18px 34px 18px 24px;
+  grid-template-columns: 160px 1fr;
+  align-items: start;
+  column-gap: 20px;
+  padding: 24px 28px 26px 24px;
   border-radius: 22px;
   background: var(--panel);
 }
 
 .organizer-portrait {
   position: relative;
-  width: 182px;
-  height: 182px;
+  width: 160px;
+  height: 160px;
   overflow: visible;
 }
 
 .organizer-card img {
   display: block;
-  width: 182px;
-  height: 182px;
+  width: 160px;
+  height: 160px;
   object-fit: contain;
+}
+
+.organizer-portrait.photo {
+  border-radius: 50%;
+  overflow: hidden;
+  background: #e8eff7;
+}
+
+.organizer-portrait.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
 }
 
 .organizer-copy {
   min-width: 0;
-  transform: translateX(-8px);
+  padding-top: 4px;
+}
+
+.organizer-bio {
+  margin: 14px 0 0;
+  color: #3a3a3a;
+  font-size: 13.5px;
+  line-height: 1.65;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .organizer-role {
@@ -411,14 +432,14 @@ a {
   }
 
   .organizer-card {
-    grid-template-columns: 194px 1fr;
-    padding-right: 40px;
+    grid-template-columns: 172px 1fr;
+    padding-right: 36px;
   }
 
   .organizer-portrait,
   .organizer-card img {
-    width: 194px;
-    height: 194px;
+    width: 172px;
+    height: 172px;
   }
 }
 
@@ -455,21 +476,16 @@ a {
   }
 
   .organizer-card {
-    grid-template-columns: 164px 1fr;
-    gap: 10px;
-    min-height: 170px;
-    padding: 16px 28px 16px 20px;
+    grid-template-columns: 148px 1fr;
+    column-gap: 18px;
+    padding: 20px 24px 22px 20px;
     border-radius: 20px;
   }
 
   .organizer-portrait,
   .organizer-card img {
-    width: 164px;
-    height: 164px;
-  }
-
-  .organizer-copy {
-    transform: translateX(-6px);
+    width: 148px;
+    height: 148px;
   }
 
   .organizer-copy h3 {
@@ -552,20 +568,15 @@ a {
   }
 
   .organizer-card {
-    grid-template-columns: 156px 1fr;
-    gap: 8px;
-    min-height: 164px;
-    padding: 16px 24px 16px 18px;
+    grid-template-columns: 140px 1fr;
+    column-gap: 16px;
+    padding: 18px 22px 20px 18px;
   }
 
   .organizer-portrait,
   .organizer-card img {
-    width: 156px;
-    height: 156px;
-  }
-
-  .organizer-copy {
-    transform: translateX(-4px);
+    width: 140px;
+    height: 140px;
   }
 
   .organizer-line-nowrap {
@@ -675,25 +686,15 @@ a {
   }
 
   .organizer-card {
-    grid-template-columns: 132px 1fr;
-    align-items: start;
-    gap: 6px;
-    padding: 14px 16px;
-    min-height: 0;
+    grid-template-columns: 120px 1fr;
+    column-gap: 14px;
+    padding: 16px 18px 18px;
   }
 
-  .organizer-portrait {
-    width: 132px;
-    height: 132px;
-  }
-
+  .organizer-portrait,
   .organizer-card img {
-    width: 132px;
-    height: 132px;
-  }
-
-  .organizer-copy {
-    transform: translateX(-2px);
+    width: 120px;
+    height: 120px;
   }
 
   .organizer-copy h3 {
@@ -704,6 +705,11 @@ a {
   .organizer-copy p {
     font-size: 14px;
     line-height: 1.45;
+  }
+
+  .organizer-bio {
+    font-size: 13px;
+    line-height: 1.6;
   }
 
   .organizer-role {
@@ -727,10 +733,7 @@ a {
   .organizer-card {
     grid-template-columns: 1fr;
     justify-items: start;
-  }
-
-  .organizer-copy {
-    transform: none;
+    row-gap: 14px;
   }
 }
 
