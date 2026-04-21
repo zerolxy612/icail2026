@@ -179,6 +179,12 @@ a {
   margin: 36px 0 34px;
 }
 
+.organizers-grid > .organizer-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: calc(50% - 11px);
+}
+
 .organizer-card {
   display: grid;
   grid-template-columns: 160px 1fr;
